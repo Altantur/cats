@@ -1,0 +1,284 @@
+$hero_width: 25vw;
+.container1 {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0px;
+  padding: 20px 96px 0px 96px;
+  overflow-x: hidden;
+}
+
+.logo {
+  background-image: url('/CatwikiLogo.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
+  width: 140px;
+  height: 50px;
+}
+
+.logo-white {
+  background-image: url('/CatwikiLogo-white.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
+  width: 140px;
+  height: 50px;
+}
+
+.footer {
+  bottom: 0px;
+  width: calc(100vw - 192px);
+  height: 100px;
+  background: #000000;
+  border-top-left-radius: 42px;
+  border-top-right-radius: 42px;
+  padding: 0px 96px 0px 96px;
+  color: white;
+}
+
+.hero {
+  min-height: 40vh;
+  min-width: 100%;
+  border-top-left-radius: 42px;
+  border-top-right-radius: 42px;
+  background-image: url('/HeroImagelg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 0px 96px 0px 96px;
+}
+
+.hero .logo-white {
+  width: $hero_width;
+  height: calc(#{$hero_width} / 2);
+  background-size: contain;
+}
+
+.get-to-know {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2em;
+  line-height: 29px;
+  color: #FFFFFF;
+  width: $hero_width;
+  margin-bottom: 40px;
+}
+
+.hero .search {
+  width: $hero_width;
+  height: 69.67px;
+  border-radius: 59px;
+  padding-left: 26px;
+  background-image: url('/magnify.svg');
+  background-repeat: no-repeat;
+  background-position: calc(#{$hero_width} - 40px) center;
+  margin-bottom: 100px;
+}
+
+.hero .search::placeholder { 
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2em;
+  line-height: 22px;
+  color: #291507;
+  opacity: 1;
+}
+
+.hero .search:focus { 
+  outline: none;
+}
+
+.most {
+  min-height: 44vh;
+  min-width: 100%;
+  border-bottom-left-radius: 42px;
+  border-bottom-right-radius: 42px;
+  background-color: #E3E1DC;
+  padding: 0px 96px 0px 96px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.most .title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2em;
+  line-height: 22px;
+  color: #291507;
+}
+
+.line {
+  width: 59.18px;
+  height: 3.21px;
+  background: #4D270C;
+  border-radius: 77px;
+  margin-top: 5px;
+}
+
+.most .result-text {
+  width: 536.93px;
+  height: 118px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 59px;
+  color: #291507;
+}
+
+.see-more {
+  width: 120px;
+  height: 22px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(41, 21, 7, 0.6);
+  background-image: url('/trending_flat.svg');
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 15px;
+}
+
+.cat-item {
+  position: relative;
+  z-index: 10;
+}
+
+.cat-item .shadow-flip {
+  position: absolute;
+  width: 46.96px;
+  height: 174.62px;
+  background: #DEC68B;
+  border-radius: 14px;
+  left: -13px;
+  top: 31px;
+  z-index: -10;
+}
+
+.cat-name {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #291507;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.cat-pic {
+  width: 220px;
+  height: 220px;
+  border-radius: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.why-cat {
+  min-height: 40vh;
+  width: 100%;
+  padding: 100px 96px 100px 96px;
+}
+
+.why-cat .text {
+  width: 45%;
+  padding-right: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.why-cat .text .title{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 59px;
+  color: #291507;
+  margin-top: -20px;
+}
+
+.why-cat .text .body{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #291507;
+}
+
+.why-cat .text .see-more{
+  width: 140px;
+}
+
+.why-cat .collection {
+  flex-grow: 1;
+}
+
+.why-cat .image-1 {
+  width: 273.52px;
+  height: 167.08px;
+  background: url('/image 2.png');
+  border-radius: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.why-cat .image-2 {
+  width: 195.49px;
+  height: 293.24px;
+  background: url('/image 1.png');
+  border-radius: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 20px;
+}
+
+.why-cat .image-3 {
+  width: 238.47px;
+  height: 385.87px;
+  background: url('/image 3.png');
+  border-radius: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: 20px;
+}
+
+.filter {
+  position: relative;
+}
+
+.container-breeds {
+  top: 75px;
+  position: absolute;
+  width: 25vw;
+  background: #FFFFFF;
+  border-radius: 24px;
+  padding: 10px;
+}
+
+.breeds {
+  max-height: 220px;
+  overflow-y: scroll;
+}
+
+.breed {
+  height: 56.16px;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.breed:hover {
+  background: rgba(151, 151, 151, 0.1);
+}
+
+.no-p {
+  padding: 0px !important;
+}
