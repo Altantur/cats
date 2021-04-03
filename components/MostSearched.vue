@@ -4,13 +4,13 @@
       Most Searched Breeds
       <div class="line" />
     </div>
-    <div class="flex justify-between items-end">
+    <div class="flex justify-between items-end mb-4">
       <div class="result-text">
         66+ Breeds For you to discover
       </div>
-      <div class="see-more">
+      <nuxt-link class="see-more" to="/discover">
         SEE MORE
-      </div>
+      </nuxt-link>
     </div>
     <div class="flex justify-between">
       <CatItem v-for="(cat, index) in cats" :key="index" :cat="cat" :first="index === 0" />
@@ -22,20 +22,20 @@ export default {
   data: () => ({
     cats: [
       {
-        image: 'https://images.unsplash.com/photo-1501820488136-72669149e0d4?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OHx8Y2F0fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
-        name: 'Cat One'
+        image: 'https://images.unsplash.com/photo-1613467505303-2708826e2201?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjF8fGJlbmdhbHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+        name: 'Bengal'
       },
       {
-        image: 'https://images.unsplash.com/photo-1548247416-ec66f4900b2e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8Y2F0fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
-        name: 'Cat Two'
+        image: 'https://snappygoat.com/b/259ed861fb3eef30ccb2b21cf0cca968b7d624b2',
+        name: 'Savannah'
       },
       {
-        image: 'https://images.unsplash.com/photo-1543852786-1cf6624b9987?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OXx8Y2F0fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
-        name: 'Cat Three'
+        image: 'https://upload.wikimedia.org/wikipedia/commons/d/d9/Norwegian_Forest_Cat_Portrait.JPG',
+        name: 'Norwegian Forest Cat'
       },
       {
-        image: 'https://images.unsplash.com/photo-1513245543132-31f507417b26?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTh8fGNhdHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
-        name: 'Cat Four'
+        image: 'https://images.unsplash.com/photo-1465244085115-0c89caa46915?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8c3BoeW54fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+        name: 'Sphynx'
       }
     ]
   })

@@ -107,6 +107,7 @@ $hero_width: 25vw;
   font-size: 1.2em;
   line-height: 22px;
   color: #291507;
+  margin-top: 20px;
 }
 
 .line {
@@ -282,3 +283,125 @@ $hero_width: 25vw;
 .no-p {
   padding: 0px !important;
 }
+
+.rating {
+  display: flex;
+  width: 340px;
+  justify-content: space-between;
+}
+
+.rating .bar {
+  width: 60px;
+  height: 12px;
+  background: #E0E0E0;
+  border-radius: 8px;
+}
+
+.rating .filled {
+  background: #544439;
+}
+
+.cat-profile {
+  display: flex;
+  width: 100%;
+}
+
+.cat-profile .section-1 {
+  min-width: 40%;
+  padding-left: 96px;
+  position: relative;
+}
+
+.cat-profile .shadow-flip {
+  position: absolute;
+  width: 46.96px;
+  height: 305.62px;
+  background: #DEC68B;
+  border-radius: 14px;
+  left: -13px;
+  top: 31px;
+  z-index: -10;
+  margin-left: 96px;
+}
+
+.cat-profile-pic {
+  width: 371.04px;
+  height: 371.04px;
+  border-radius: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.cat-profile .section-2 {
+  flex-grow: 1%;
+  margin-left: 40px;
+}
+
+.section-2 .title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: #291507;
+  margin-bottom: 25px;
+}
+
+.section-2 .description {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #291507;
+  margin-bottom: 30px;
+}
+
+.section-2 .field {
+  margin-bottom: 30px;
+  width: 85%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.section-2 .rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.other .text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: #291507;
+  margin: 0px 0px 30px 0px;
+}
+
+.other .photos {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto;
+  column-gap: 40px;
+  margin-bottom: 100px;
+}
+
+.photos .photo {
+  width: 278px;
+  height: 278px;
+  border-radius: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 30px;
+}
+
+
+
+
