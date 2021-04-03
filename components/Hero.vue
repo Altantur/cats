@@ -6,8 +6,15 @@
         Get to know more about your cat breed
       </div>
       <div class="filter">
-        <input class="search" type="text" placeholder="Enter your breed">
-        <div class="container-breeds" :class="{'no-p': !breeds.length}">
+        <input
+          v-model="query"
+          class="search"
+          type="text"
+          placeholder="Enter your breed"
+          @focus="focused=true"
+          @blur="focused=false"
+        >
+        <div v-if="focused" class="container-breeds" :class="{'no-p': !breeds.length}">
           <div class="breeds">
             <div v-for="(breed, index) in breeds" :key="index" class="breed flex items-center">
               {{ breed.name }}
@@ -21,32 +28,28 @@
 <script>
 export default {
   data: () => ({
-    breeds: [
-      {
-        name: 'Cat One'
-      },
-      {
-        name: 'Cat Two'
-      },
-      {
-        name: 'Cat Three'
-      },
-      {
-        name: 'Cat Four'
-      },
-      {
-        name: 'Cat Five'
-      },
-      {
-        name: 'Cat Six'
-      },
-      {
-        name: 'Cat Seven'
-      }
-    ]
+    breeds: [],
+    focused: false,
+    query: ''
   }),
+  watch: {
+    query (val) {
+      this.search()
+    }
+  },
   methods: {
-    search () {
+    async search () {
+      if (this.query) {
+        const res = await this.$axios.$get(
+          'https://api.thecatapi.com/v1/breeds/search?q=' + this.query, {}, {
+            headers: {
+              'x-api-key': 'd4361045-102a-4d10-a132-5fd3975edc86'
+            }
+          })
+        this.breeds = res
+      } else {
+        this.breeds = []
+      }
     }
   }
 }
