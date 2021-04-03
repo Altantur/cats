@@ -12,13 +12,13 @@
           type="text"
           placeholder="Enter your breed"
           @focus="focused=true"
-          @blur="focused=false"
+          @blur="toBeUnFocus()"
         >
         <div v-if="focused" class="container-breeds" :class="{'no-p': !breeds.length}">
           <div class="breeds">
-            <div v-for="(breed, index) in breeds" :key="index" class="breed flex items-center">
+            <nuxt-link v-for="(breed, index) in breeds" :key="index" class="breed flex items-center" :to="'/' + breed.name">
               {{ breed.name }}
-            </div>
+            </nuxt-link>
           </div>
         </div>
       </div>
@@ -50,6 +50,9 @@ export default {
       } else {
         this.breeds = []
       }
+    },
+    toBeUnFocus () {
+      setTimeout(() => { this.focused = false }, 100)
     }
   }
 }
