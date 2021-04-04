@@ -4,7 +4,7 @@
       Most Searched Breeds
       <div class="line" />
     </div>
-    <div class="flex justify-between items-end mb-4">
+    <div class="flex justify-between items-end mb-4 flex-wrap">
       <div class="result-text">
         66+ Breeds For you to discover
       </div>
@@ -12,7 +12,7 @@
         SEE MORE
       </nuxt-link>
     </div>
-    <div class="flex justify-between">
+    <div class="flex justify-between flex-wrap">
       <CatItem v-for="(cat, index) in cats" :key="index" :cat="cat" :first="index === 0" />
     </div>
   </div>

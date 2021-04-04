@@ -1,5 +1,5 @@
 <template>
-  <div class="why-cat flex">
+  <div class="why-cat flex flex-wrap">
     <div class="text flex flex-col justify-around">
       <div class="line" />
       <div class="title">
@@ -8,9 +8,9 @@
       <div class="body">
         Having a cat around you can actually trigger the release of calming chemicals in your body which lower your stress and anxiety levels...
       </div>
-      <div class="see-more">
+      <a class="see-more" href="https://www.mentalfloss.com/article/51154/10-scientific-benefits-being-cat-owner#:~:text=YOU'LL%20HAVE%20A%20HEALTHIER,has%20a%20positive%20calming%20effect." target="_blank">
         READ MORE
-      </div>
+      </a>
     </div>
     <div class="collection flex justify-end">
       <div class="flex flex-col items-end">

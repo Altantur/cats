@@ -24,35 +24,35 @@
           <strong>Life Span: </strong>
           {{ current.life_span }} years
         </div>
-        <div class="field rating">
+        <div class="field rating-1">
           <strong>Adaptability: </strong>
           <Rating :rate="current.adaptability" />
         </div>
-        <div class="field rating">
+        <div class="field rating-1">
           <strong>Affection level: </strong>
           <Rating :rate="current.affection_level" />
         </div>
-        <div class="field rating">
+        <div class="field rating-1">
           <strong>Child Friendly: </strong>
           <Rating :rate="current.child_friendly" />
         </div>
-        <div class="field rating">
+        <div class="field rating-1">
           <strong>Grooming: </strong>
           <Rating :rate="current.grooming" />
         </div>
-        <div class="field rating">
+        <div class="field rating-1">
           <strong>Intelligence: </strong>
           <Rating :rate="current.intelligence" />
         </div>
-        <div class="field rating">
+        <div class="field rating-1">
           <strong>Health issues: </strong>
           <Rating :rate="current.health_issues" />
         </div>
-        <div class="field rating">
+        <div class="field rating-1">
           <strong>Social needs: </strong>
           <Rating :rate="current.social_needs" />
         </div>
-        <div class="field rating">
+        <div class="field rating-1">
           <strong>Stranger friendly: </strong>
           <Rating :rate="current.stranger_friendly" />
         </div>
