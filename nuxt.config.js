@@ -11,7 +11,13 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:site', content: '@altantur' },
+      { name: 'twitter:creator', content: '@altantur' },
+      { name: 'twitter:title', content: 'Know your cat.' },
+      { name: 'twitter:description', content: 'Dev Challenge Cat Wiki.' },
+      { name: 'twitter:image', content: 'https://cats.altantur.me/demo.gif' },
+      { hid: 'description', name: 'description', content: 'I am Altantur, here to help you.' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' }
